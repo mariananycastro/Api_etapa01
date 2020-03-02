@@ -1,0 +1,32 @@
+[
+  {
+    "name" : "Programador Ruby",
+    "headhunter_id" :"1",
+    "description" : "Vaga para programador Ruby",
+    "habilities" : "Saber programar",
+    "salary_range" : "5000",
+    "opportunity_level" : "Pleno",
+    "end_date_opportunity" : "2021-02-02",
+    "region" : "São Paulo"
+  },
+  {
+    "name" : "Programador Ruby 2",
+    "headhunter_id" :"1",
+    "description" : "Vaga para programador",
+    "habilities" : "Saber programar muito",
+    "salary_range" : "10000",
+    "opportunity_level" : "Sênior",
+    "end_date_opportunity" : "2021-03-02",
+    "region" : "Rio"
+  },
+  {
+    "name" : "Programador Ruby 3",
+    "headhunter_id" :"2",
+    "description" : "Vaga para programadora",
+    "habilities" : "Saber programar muito mesmo",
+    "salary_range" : "20000",
+    "opportunity_level" : "Sênior",
+    "end_date_opportunity" : "2021-04-02",
+    "region" : "Londres"
+  }
+]
