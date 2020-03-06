@@ -25,9 +25,9 @@ class JobOpportunity
 
   def self.index(json)
     url = 'https://localhost:4000/' \
-          '/api/v1/job_opportunities'
+          'api/v1/job_opportunities'
     begin
-      response = call_api(url)
+      response = Faraday.get(url)
     rescue Faraday::ConnectionFailed
       puts 'erro'
       return []
@@ -37,9 +37,21 @@ class JobOpportunity
     create_job_opportunity(json)
   end
 
-  def self.call_api(url)
-    Faraday.get(url)
+  def self.create(json)
+    job_opportunity = JSON.parse(json, symbolize_names: true)
+    url = 'https://localhost:4000/' \
+    'api/v1/job_opportunities'
+    begin
+      responde = Faraday.post(url, job_opportunity)
+    rescue Faraday::ConnectionFailed
+      puts 'erro'
+      return []
+    end
+    json = catch_json(response)
+    JobOpportunity.create_job_opportunity(job_opportunity)
   end
+
+  private
 
   def self.catch_json(response)
     JSON.parse(response.body, symbolize_names: true)
