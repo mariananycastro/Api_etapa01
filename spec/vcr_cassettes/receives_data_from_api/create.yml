@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:4000/api/v1/job_opportunities
+    body:
+      encoding: UTF-8
+      string: description=Vaga+para+programador+Ruby&end_date_opportunity=2021-02-02&habilities=Saber+programar&headhunter_id=1&name=Programador+Ruby&opportunity_level=Pleno&region=S%C3%A3o+Paulo&salary_range=5000
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6d42b987c19b16a4015bb8aa7cf628f8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bc728342-371a-4372-94aa-6278a9a9bc56
+      X-Runtime:
+      - '0.040367'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6MjMsIm5hbWUiOiJQcm9ncmFtYWRvciBSdWJ5IiwiZGVzY3JpcHRpb24iOiJWYWdhIHBhcmEgcHJvZ3JhbWFkb3IgUnVieSIsImhhYmlsaXRpZXMiOiJTYWJlciBwcm9ncmFtYXIiLCJzYWxhcnlfcmFuZ2UiOiI1MDAwIiwib3Bwb3J0dW5pdHlfbGV2ZWwiOiJQbGVubyIsImVuZF9kYXRlX29wcG9ydHVuaXR5IjoiMjAyMS0wMi0wMiIsInJlZ2lvbiI6IlPDo28gUGF1bG8iLCJjcmVhdGVkX2F0IjoiMjAyMC0wNC0wNlQxOTo0NDo0Ni4xMTZaIiwidXBkYXRlZF9hdCI6IjIwMjAtMDQtMDZUMTk6NDQ6NDYuMTE2WiIsImhlYWRodW50ZXJfaWQiOjEsInN0YXR1cyI6dHJ1ZX0=
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 19:44:46 GMT
+recorded_with: VCR 5.1.0

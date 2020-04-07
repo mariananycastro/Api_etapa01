@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/api/v1/job_opportunities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b0c9d13f31d5f4df0eea4063386acf11"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0fe36e43-ad08-4236-9455-6eec768e973e
+      X-Runtime:
+      - '0.134106'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjEsIm5hbWUiOiJub3ZhIiwiZGVzY3JpcHRpb24iOiJub2NhIiwiaGFiaWxpdGllcyI6Im5vdmEiLCJzYWxhcnlfcmFuZ2UiOiIxMDAwIiwib3Bwb3J0dW5pdHlfbGV2ZWwiOiJFc3RhZ2nDoXJpbyIsImVuZF9kYXRlX29wcG9ydHVuaXR5IjoiMjAyMC0wNS0wMiIsInJlZ2lvbiI6Im5vdmEiLCJjcmVhdGVkX2F0IjoiMjAyMC0wMy0wMlQxNjoyODowMy4wMjRaIiwidXBkYXRlZF9hdCI6IjIwMjAtMDMtMDJUMTY6Mjg6MDMuMDI0WiIsImhlYWRodW50ZXJfaWQiOjIsInN0YXR1cyI6dHJ1ZX0seyJpZCI6MiwibmFtZSI6IjEyMyIsImRlc2NyaXB0aW9uIjoiNDU2IiwiaGFiaWxpdGllcyI6Ijc4OSIsInNhbGFyeV9yYW5nZSI6IjQ1NiIsIm9wcG9ydHVuaXR5X2xldmVsIjoiRGlyZXRvciIsImVuZF9kYXRlX29wcG9ydHVuaXR5IjoiMjAyMS0wMS0wMiIsInJlZ2lvbiI6IkFxdWkiLCJjcmVhdGVkX2F0IjoiMjAyMC0wNC0wNlQxODoxNToxMy4yNzBaIiwidXBkYXRlZF9hdCI6IjIwMjAtMDQtMDZUMTg6MTU6MTMuMjcwWiIsImhlYWRodW50ZXJfaWQiOjMsInN0YXR1cyI6dHJ1ZX1d
+    http_version: null
+  recorded_at: Mon, 06 Apr 2020 18:31:23 GMT
+recorded_with: VCR 5.1.0
